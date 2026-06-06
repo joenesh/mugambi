@@ -17,7 +17,7 @@
   --stadium: oklch(0.18 0.03 250);
   --gradient-hero: linear-gradient(135deg, oklch(0.18 0.03 250 / 0.95) 0%, oklch(0.18 0.03 250 / 0.6) 60%, oklch(0.66 0.19 145 / 0.4) 100%);
   --gradient-primary: linear-gradient(135deg, oklch(0.66 0.19 145), oklch(0.74 0.18 155));
-  --gradient-victory: linear-gradient(135deg, oklch(0.66 0.19 145), oklch(0.86 0.18 95));
+  --gradient-mugambi: linear-gradient(135deg, oklch(0.66 0.19 145), oklch(0.86 0.18 95));
   --shadow-sports: 0 20px 50px -15px oklch(0.66 0.19 145 / 0.5);
   --shadow-glow: 0 0 60px oklch(0.86 0.18 95 / 0.4);
 }
@@ -93,7 +93,7 @@ h1,h2,h3,h4,h5{font-family:'Oswald',sans-serif;letter-spacing:.01em}
 .heading-section{font-family:'Oswald',sans-serif;font-size:2.25rem;font-weight:700;text-transform:uppercase;letter-spacing:-.02em}
 @media(min-width:768px){.heading-section{font-size:3rem}}
 .eyebrow{font-family:'Oswald',sans-serif;display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.25em;color:var(--secondary)}
-.text-gradient{background:var(--gradient-victory);-webkit-background-clip:text;background-clip:text;color:transparent}
+.text-gradient{background:var(--gradient-mugambi);-webkit-background-clip:text;background-clip:text;color:transparent}
 .stripe-bg{background-image:repeating-linear-gradient(135deg,oklch(0.66 0.19 145 /.05) 0px,oklch(0.66 0.19 145 /.05) 2px,transparent 2px,transparent 14px)}
 @keyframes fade-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes spin-ball{to{transform:rotate(360deg)}}

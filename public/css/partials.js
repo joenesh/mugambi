@@ -32,7 +32,7 @@
         <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform">
           <i data-lucide="trophy" class="w-5 h-5 text-primary-foreground"></i>
         </div>
-        <span class="font-display font-bold text-xl uppercase tracking-wider">Victory<span class="text-primary">Club</span></span>
+        <span class="font-display font-bold text-xl uppercase tracking-wider">Mugambi <span class="text-primary">FC</span></span>
       </a>
       <nav class="hidden lg:flex items-center gap-1">
         ${NAV.map(n => `<a href="${n.href}" class="nav-link px-4 py-2 text-sm font-display font-semibold uppercase tracking-wider transition-colors ${n.href === path ? 'text-secondary' : 'text-foreground/80 hover:text-secondary'}">${n.label}</a>`).join('')}
@@ -97,7 +97,7 @@
             <div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform">
               <i data-lucide="trophy" class="w-5 h-5 text-primary-foreground"></i>
             </div>
-            <span class="font-display font-bold text-2xl uppercase tracking-wider">Victory<span class="text-primary">Club</span></span>
+            <span class="font-display font-bold text-2xl uppercase tracking-wider">Mugambi <span class="text-primary">FC</span></span>
           </a>
           <p class="text-muted-foreground text-sm leading-relaxed mt-5 max-w-sm">Forging champions on and off the pitch since 2010. Train hard. Play harder. Wear the green &amp; gold with pride.</p>
           <div class="mt-6 flex flex-wrap gap-2">
@@ -133,7 +133,7 @@
             <div class="mt-4 flex items-center justify-between gap-2">
               <div class="text-center flex-1">
                 <div class="w-10 h-10 mx-auto rounded-full bg-primary flex items-center justify-center"><i data-lucide="trophy" class="w-5 h-5 text-primary-foreground"></i></div>
-                <div class="font-display text-sm uppercase mt-2">Victory</div>
+                <div class="font-display text-sm uppercase mt-2">Gor Mahia</div>
               </div>
               <div class="text-secondary font-display font-bold">VS</div>
               <div class="text-center flex-1">
@@ -151,7 +151,7 @@
           <h4 class="font-display uppercase tracking-wider text-secondary mb-5 text-sm">Get in Touch</h4>
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-4 h-4"></i></span><span class="pt-1">12 Stadium Road, Greenfield City</span></li>
-            <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-4 h-4"></i></span><a href="tel:+15550101234" class="pt-1">+1 (555) 010-1234</a></li>
+            <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-4 h-4"></i></span><a href="tel:+254790592868" class="pt-1">+254 790 592 868</a></li>
             <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-4 h-4"></i></span><a href="mailto:hello@mugambi.fc" class="pt-1">hello@mugambi.fc</a></li>
           </ul>
         </div>
