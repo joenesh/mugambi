@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — VictoryClub FC</title>
+  <meta name="description" content="Action shots, celebrations and moments from VictoryClub matches.">
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" href="images/football.png">
+</head>
+
+<body class="bg-background text-foreground">
+  <main class="pt-20">
+
+    <!-- HERO -->
+    <section class="relative py-24 md:py-32 stripe-bg border-b border-border">
+      <div class="container-x text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Match
+          Moments</span>
+        <h1 class="heading-hero mt-4">Gallery</h1>
+        <p class="mt-4 text-muted-foreground max-w-2xl mx-auto">Relive the passion, the drama, and the glory through the
+          lens of VictoryClub.</p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="py-8 border-b border-border bg-card/30">
+      <div class="container-x">
+        <div class="flex flex-wrap justify-center gap-3" id="filter-buttons">
+          <!-- JS will generate buttons -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MASONRY GRID (original, now with data-category) -->
+    <section class="section-padding">
+      <div class="container-x columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4" id="grid"></div>
+    </section>
+
+    <!-- PHOTO OF THE WEEK -->
+    <section class="section-padding bg-card/40 stripe-bg border-t border-border">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Editor's
+            Pick</span>
+          <h2 class="heading-section mt-3">Photo of the <span class="text-primary">Week</span></h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div data-aos="fade-up" class="rounded-2xl overflow-hidden shadow-2xl relative group aspect-video">
+            <img src="assets/gallery-1.jpg" alt="Championship celebration"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-stadium/80 via-transparent to-transparent flex items-end p-5">
+              <span class="font-display uppercase tracking-widest text-secondary text-sm">Title Celebration</span>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200"
+            class="rounded-2xl overflow-hidden shadow-2xl relative group aspect-video">
+            <img src="assets/gallery-3.jpg" alt="Training ground moment"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-stadium/80 via-transparent to-transparent flex items-end p-5">
+              <span class="font-display uppercase tracking-widest text-secondary text-sm">Behind the Scenes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEHIND THE LENS -->
+    <section class="section-padding">
+      <div class="container-x grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+        <div data-aos="fade-right">
+          <span class="eyebrow"><span class="w-8 h-px bg-secondary"></span> Club Photographer</span>
+          <h2 class="heading-section mt-3">Behind the <span class="text-primary">Lens</span></h2>
+          <p class="mt-5 text-muted-foreground leading-relaxed">Meet Alex Rivera, our official club photographer. From
+            the roar of the crowd to the quiet moments in the dressing room, Alex captures the soul of VictoryClub. With
+            over a decade of sports photography experience, he never misses a beat — or a goal celebration.</p>
+          <p class="mt-3 text-muted-foreground">"Every picture tells a story. I'm proud to tell ours."</p>
+          <div class="flex gap-3 mt-5">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary transition"><i
+                data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary transition"><i
+                data-lucide="camera" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="rounded-2xl overflow-hidden shadow-2xl">
+          <img src="assets/training.jpg" alt="Club photographer at work" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARE YOUR PHOTOS CTA -->
+    <section class="section-padding bg-card/40 stripe-bg border-y border-border">
+      <div class="container-x text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Join the
+          Gallery</span>
+        <h2 class="heading-section mt-3">Share Your <span class="text-primary">Moments</span></h2>
+        <p class="mt-4 text-muted-foreground max-w-xl mx-auto">Were you there? Tag your photos with <span
+            class="text-secondary font-display">#VictoryClubMoment</span> on Instagram for a chance to be featured in
+          our fan gallery.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+          <a href="#" class="btn-primary">Submit Photos <i data-lucide="upload" class="w-4 h-4"></i></a>
+          <a href="#" class="btn-outline">View Fan Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden">
+      <img src="assets/hero-stadium.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-stadium/85"></div>
+      <div class="container-x relative z-10 py-24 text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Live the
+          Experience</span>
+        <h2 class="heading-section mt-4 max-w-3xl mx-auto">Be Part of the <span class="text-gradient">Next Frame</span>
+        </h2>
+        <p class="mt-5 text-foreground/80 max-w-xl mx-auto">From the stands to the pitch, your story is waiting. Join
+          VictoryClub and make your own history.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a class='btn-primary' href='contact.html'>Join the Club <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          <a class='btn-outline' href='index.html'><i data-lucide="home" class="w-4 h-4"></i> Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ✅ Lightbox Modal (unchanged) -->
+  <div id="modal"
+    class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300"
+    onclick="if(event.target===this) this.classList.add('hidden')">
+    <span class="absolute top-4 right-8 text-white text-4xl leading-none cursor-pointer hover:text-secondary transition"
+      onclick="document.getElementById('modal').classList.add('hidden')">&times;</span>
+    <img id="modal-img" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" src="#"
+      alt="Gallery image">
+  </div>
+
+  <script>
+    // ---- IMAGE DATA WITH CATEGORIES ----
+    const IMAGES = [
+      { file: "gallery-1", category: "celebration" },
+      { file: "gallery-2", category: "match" },
+      { file: "gallery-3", category: "training" },
+      { file: "gallery-4", category: "match" },
+      { file: "hero-stadium", category: "stadium" },
+      { file: "training", category: "training" },
+      { file: "player-1", category: "portrait" },
+      { file: "player-3", category: "portrait" }
+    ];
+
+    const categories = [
+      { key: "all", label: "All" },
+      { key: "match", label: "Match" },
+      { key: "celebration", label: "Celebration" },
+      { key: "training", label: "Training" },
+      { key: "portrait", label: "Portraits" },
+      { key: "stadium", label: "Stadium" }
+    ];
+
+    // ---- RENDER FILTER BUTTONS ----
+    const filterContainer = document.getElementById('filter-buttons');
+    filterContainer.innerHTML = categories.map(cat =>
+      `<button data-filter="${cat.key}" class="px-5 py-2 rounded-full text-sm font-display uppercase tracking-widest border border-border bg-card hover:border-primary hover:text-primary transition-all ${cat.key === 'all' ? 'bg-primary text-primary-foreground border-primary' : ''}">${cat.label}</button>`
+    ).join('');
+
+    // ---- RENDER GRID ----
+    const grid = document.getElementById('grid');
+    function renderGrid(filter = "all") {
+      const filtered = filter === "all" ? IMAGES : IMAGES.filter(img => img.category === filter);
+      grid.innerHTML = filtered.map((g, i) => `
+    <div data-aos="fade-up" data-aos-delay="${i * 80}" data-category="${g.category}" class="gallery-item break-inside-avoid overflow-hidden rounded-xl group relative cursor-pointer">
+      <img src="assets/${g.file}.jpg" alt="" loading="lazy" class="w-full group-hover:scale-110 transition-transform duration-700">
+      <div class="absolute inset-0 bg-stadium/70 opacity-0 group-hover:opacity-100 flex items-end p-4 transition-opacity">
+        <span class="font-display uppercase tracking-widest text-secondary text-xs">VictoryClub</span>
+      </div>
+    </div>
+  `).join('');
+
+      // Re-trigger AOS for new items (AOS doesn't auto-refresh, so we manually re-init)
+      if (window.AOS) {
+        AOS.refresh();
+      }
+    }
+    renderGrid();
+
+    // ---- FILTER INTERACTION ----
+    filterContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+
+      // Update active button style
+      filterContainer.querySelectorAll('button').forEach(b => {
+        b.classList.remove('bg-primary', 'text-primary-foreground', 'border-primary');
+      });
+      btn.classList.add('bg-primary', 'text-primary-foreground', 'border-primary');
+
+      const filter = btn.dataset.filter;
+      renderGrid(filter);
+
+      // Re-lightbox event listeners are still valid because 'grid' innerHTML changes,
+      // so we need to re-attach the lightbox click listener.
+      // The original lightbox listener was on the grid element itself using event delegation,
+      // so it should still work. Good.
+    });
+
+    // ---- LIGHTBOX (unchanged) ----
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+
+    grid.addEventListener('click', (e) => {
+      const img = e.target.closest('.gallery-item')?.querySelector('img');
+      if (img) {
+        modalImg.src = img.src;
+        modal.classList.remove('hidden');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="css/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60,
+    });
+    lucide.createIcons();
+  </script>
+  <script src="css/partials.js"></script>
+</body>
+
+</html>

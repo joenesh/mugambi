@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Squad — VictoryClub FC</title>
+  <meta name="description" content="Meet the players who wear the green & gold for VictoryClub.">
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" href="images/football.png">
+</head>
+<body class="bg-background text-foreground">
+  <main class="pt-20">
+
+    <!-- HERO -->
+    <section class="relative py-24 md:py-32 stripe-bg border-b border-border">
+      <div class="container-x text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Players</span>
+        <h1 class="heading-hero mt-4">The Squad</h1>
+        <p class="mt-4 text-muted-foreground max-w-2xl mx-auto">The heart and soul of VictoryClub – meet the warriors
+          who fight for the badge.</p>
+      </div>
+    </section>
+
+    <!-- TEAM STATS BAR -->
+    <section class="border-b border-border">
+      <div class="container-x">
+        <div class="grid grid-cols-4 gap-px bg-border rounded-b-xl overflow-hidden border-x border-b border-border">
+          <div data-aos="zoom-in" data-aos-delay="0" class="bg-card/80 backdrop-blur p-6 text-center">
+            <i data-lucide="users" class="w-5 h-5 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-2">24</div>
+            <div class="text-xs uppercase tracking-widest text-muted-foreground mt-1">Squad Size</div>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="120" class="bg-card/80 backdrop-blur p-6 text-center">
+            <i data-lucide="calendar" class="w-5 h-5 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-2">23.7</div>
+            <div class="text-xs uppercase tracking-widest text-muted-foreground mt-1">Avg. Age</div>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="240" class="bg-card/80 backdrop-blur p-6 text-center">
+            <i data-lucide="flag" class="w-5 h-5 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-2">8</div>
+            <div class="text-xs uppercase tracking-widest text-muted-foreground mt-1">Nationalities</div>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="360" class="bg-card/80 backdrop-blur p-6 text-center">
+            <i data-lucide="shield" class="w-5 h-5 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-2">12</div>
+            <div class="text-xs uppercase tracking-widest text-muted-foreground mt-1">Academy Graduates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAYER GRID (original) -->
+    <section class="section-padding">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> First Team</span>
+          <h2 class="heading-section mt-3">Meet the <span class="text-primary">Players</span></h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="squad"></div>
+      </div>
+    </section>
+
+    <!-- PLAYER SPOTLIGHT (featured player) -->
+    <section class="section-padding bg-card/40 stripe-bg">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Spotlight</span>
+          <h2 class="heading-section mt-3">Player of the <span class="text-primary">Season</span></h2>
+        </div>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div data-aos="fade-right" class="relative">
+            <div class="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
+              <img src="assets/player-1.jpg" alt="Marco Silva" loading="lazy" class="w-full h-full object-cover">
+            </div>
+            <div
+              class="absolute bottom-4 right-4 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg font-display uppercase text-sm tracking-widest">
+              MVP 2026</div>
+          </div>
+          <div data-aos="fade-left">
+            <span class="eyebrow"><span class="w-8 h-px bg-secondary"></span> Captain</span>
+            <h3 class="font-display text-3xl uppercase mt-3">Marco Silva</h3>
+            <div class="text-secondary font-display text-sm tracking-wider mt-1">Forward · #9</div>
+            <p class="text-muted-foreground mt-5 leading-relaxed">Marco has been the driving force behind our attack for
+              five seasons. With 22 goals this campaign and countless assists, his leadership on and off the pitch makes
+              him the heartbeat of VictoryClub. A product of our own academy, he embodies everything this club stands
+              for.</p>
+            <div class="grid grid-cols-3 gap-4 mt-6">
+              <div>
+                <div class="font-display text-2xl font-bold text-secondary">22</div>
+                <div class="text-xs text-muted-foreground">Goals</div>
+              </div>
+              <div>
+                <div class="font-display text-2xl font-bold text-secondary">14</div>
+                <div class="text-xs text-muted-foreground">Assists</div>
+              </div>
+              <div>
+                <div class="font-display text-2xl font-bold text-secondary">30</div>
+                <div class="text-xs text-muted-foreground">Matches</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHING STAFF -->
+    <section class="section-padding">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Leadership</span>
+          <h2 class="heading-section mt-3">Coaching <span class="text-primary">Staff</span></h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div data-aos="fade-up" data-aos-delay="0"
+            class="p-6 rounded-xl bg-card border border-border text-center group">
+            <div class="w-24 h-24 rounded-full overflow-hidden mx-auto bg-secondary/20">
+              <img src="assets/player-2.jpg" alt="Coach Antonio" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-display text-xl uppercase mt-4">Coach Antonio</h3>
+            <p class="text-secondary text-xs font-display tracking-wider mt-1">Head Coach</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="120"
+            class="p-6 rounded-xl bg-card border border-border text-center group">
+            <div class="w-24 h-24 rounded-full overflow-hidden mx-auto bg-secondary/20">
+              <img src="assets/player-1.jpg" alt="Maria Costa" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-display text-xl uppercase mt-4">Maria Costa</h3>
+            <p class="text-secondary text-xs font-display tracking-wider mt-1">Assistant Coach</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="240"
+            class="p-6 rounded-xl bg-card border border-border text-center group">
+            <div class="w-24 h-24 rounded-full overflow-hidden mx-auto bg-secondary/20">
+              <img src="assets/player-3.jpg" alt="Ravi Singh" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-display text-xl uppercase mt-4">Ravi Singh</h3>
+            <p class="text-secondary text-xs font-display tracking-wider mt-1">Fitness Coach</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="360"
+            class="p-6 rounded-xl bg-card border border-border text-center group">
+            <div class="w-24 h-24 rounded-full overflow-hidden mx-auto bg-secondary/20">
+              <img src="assets/gallery-4.jpg" alt="Lee Park" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-display text-xl uppercase mt-4">Lee Park</h3>
+            <p class="text-secondary text-xs font-display tracking-wider mt-1">Goalkeeping Coach</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section-padding bg-card/40 stripe-bg border-t border-border">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Legacy</span>
+          <h2 class="heading-section mt-3">Team <span class="text-primary">Achievements</span></h2>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div data-aos="fade-up" data-aos-delay="0" class="p-6 rounded-xl bg-card border border-border text-center">
+            <i data-lucide="trophy" class="w-8 h-8 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-3">3×</div>
+            <div class="text-sm text-muted-foreground mt-1">League Champions</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="120" class="p-6 rounded-xl bg-card border border-border text-center">
+            <i data-lucide="star" class="w-8 h-8 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-3">4×</div>
+            <div class="text-sm text-muted-foreground mt-1">Cup Winners</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="240" class="p-6 rounded-xl bg-card border border-border text-center">
+            <i data-lucide="award" class="w-8 h-8 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-3">12</div>
+            <div class="text-sm text-muted-foreground mt-1">Individual Awards</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden">
+      <img src="assets/hero-stadium.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-stadium/85"></div>
+      <div class="container-x relative z-10 py-24 text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Join the
+          Team</span>
+        <h2 class="heading-section mt-4 max-w-3xl mx-auto">Be Part of the <span class="text-gradient">Next
+            Chapter</span></h2>
+        <p class="mt-5 text-foreground/80 max-w-xl mx-auto">Trials are open. Show us what you've got and earn your place
+          among the best.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a class='btn-primary' href='contact.html'>Register Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          <a class='btn-outline' href='index.html'><i data-lucide="home" class="w-4 h-4"></i> Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Original squad data
+    const SQUAD = [
+      { name: "Marco Silva", position: "Forward · #9", img: "assets/player-1.jpg" },
+      { name: "Diego Cruz", position: "Goalkeeper · #1", img: "assets/player-2.jpg" },
+      { name: "Liam Hayes", position: "Midfielder · #10", img: "assets/player-3.jpg" },
+      { name: "Andre Vieira", position: "Defender · #4", img: "assets/player-1.jpg" },
+      { name: "Noah Becker", position: "Winger · #7", img: "assets/player-3.jpg" },
+      { name: "Sam Okoro", position: "Defender · #5", img: "assets/player-2.jpg" },
+    ];
+    document.getElementById('squad').innerHTML = SQUAD.map((p, i) => `
+    <div data-aos="fade-up" data-aos-delay="${i * 100}" class="card-player">
+      <div class="aspect-[3/4] overflow-hidden"><img src="${p.img}" alt="${p.name}" loading="lazy" class="w-full h-full object-cover"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-stadium via-stadium/20 to-transparent"></div>
+      <div class="absolute bottom-0 inset-x-0 p-6"><div class="text-secondary text-xs font-display uppercase tracking-widest">${p.position}</div><h3 class="font-display text-2xl uppercase mt-1">${p.name}</h3></div>
+    </div>`).join('');
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="css/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60,
+    });
+    lucide.createIcons();
+  </script>
+  <script src="css/partials.js"></script>
+</body>
+
+</html>

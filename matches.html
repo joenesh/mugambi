@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fixtures — VictoryClub FC</title>
+  <meta name="description" content="Upcoming matches, league fixtures, results and table for VictoryClub.">
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" href="images/football.png">
+</head>
+<body class="bg-background text-foreground">
+  <main class="pt-20">
+
+    <!-- HERO -->
+    <section class="relative py-24 md:py-32 stripe-bg border-b border-border">
+      <div class="container-x text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Upcoming
+          Matches</span>
+        <h1 class="heading-hero mt-4">Fixtures</h1>
+        <p class="mt-4 text-muted-foreground max-w-2xl mx-auto">Catch all the action — here’s the schedule for the
+          season ahead.</p>
+      </div>
+    </section>
+
+    <!-- UPCOMING FIXTURES (original) -->
+    <section class="section-padding">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Don’t Miss a
+            Match</span>
+          <h2 class="heading-section mt-3">Upcoming <span class="text-primary">Fixtures</span></h2>
+        </div>
+        <div class="space-y-4" id="fixtures"></div>
+      </div>
+    </section>
+
+    <!-- RECENT RESULTS -->
+    <section class="section-padding bg-card/40 stripe-bg">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> How We Did</span>
+          <h2 class="heading-section mt-3">Recent <span class="text-primary">Results</span></h2>
+        </div>
+        <div class="space-y-4" id="results"></div>
+      </div>
+    </section>
+
+    <!-- SEASON STATS / OVERVIEW -->
+    <section class="section-padding">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Season So
+            Far</span>
+          <h2 class="heading-section mt-3">At a <span class="text-primary">Glance</span></h2>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div data-aos="fade-up" data-aos-delay="0" class="p-6 rounded-xl bg-card border border-border text-center">
+            <i data-lucide="play-circle" class="w-6 h-6 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-3">24</div>
+            <div class="text-sm text-muted-foreground mt-1">Matches Played</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="120" class="p-6 rounded-xl bg-card border border-border text-center">
+            <i data-lucide="trending-up" class="w-6 h-6 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-3">18W</div>
+            <div class="text-sm text-muted-foreground mt-1">Win Record</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="240" class="p-6 rounded-xl bg-card border border-border text-center">
+            <i data-lucide="target" class="w-6 h-6 text-secondary mx-auto"></i>
+            <div class="font-display text-3xl font-bold mt-3">62</div>
+            <div class="text-sm text-muted-foreground mt-1">Goals Scored</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAGUE TABLE -->
+    <section class="section-padding bg-card/40">
+      <div class="container-x">
+        <div class="text-center mb-12">
+          <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> The Race</span>
+          <h2 class="heading-section mt-3">League <span class="text-primary">Standings</span></h2>
+          <p class="text-sm text-muted-foreground mt-3">Top 5 · Regional Division</p>
+        </div>
+        <div class="max-w-3xl mx-auto overflow-x-auto">
+          <table class="w-full text-left text-sm">
+            <thead class="border-b border-border text-muted-foreground font-display uppercase tracking-widest text-xs">
+              <tr>
+                <th class="py-3 px-4">#</th>
+                <th class="py-3 px-4">Club</th>
+                <th class="py-3 px-4 text-center">P</th>
+                <th class="py-3 px-4 text-center">W</th>
+                <th class="py-3 px-4 text-center">D</th>
+                <th class="py-3 px-4 text-center">L</th>
+                <th class="py-3 px-4 text-center">Pts</th>
+              </tr>
+            </thead>
+            <tbody id="standings-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKET INFO / CTA -->
+    <section class="section-padding">
+      <div class="container-x grid md:grid-cols-2 gap-8 items-center">
+        <div data-aos="fade-right">
+          <span class="eyebrow"><span class="w-8 h-px bg-secondary"></span> Be There</span>
+          <h2 class="heading-section mt-3">Matchday <span class="text-primary">Tickets</span></h2>
+          <p class="mt-5 text-muted-foreground leading-relaxed">Home games are played at Stadium Arena. Tickets are
+            available online or at the gate. Members get free entry — bring your card.</p>
+          <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> General
+              Admission: ₹150</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> Kids under 12:
+              Free with an adult</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> VIP Stand: ₹750
+              (includes refreshments)</li>
+          </ul>
+          <a class='btn-primary mt-6' href='contact.html'>Get Tickets <i data-lucide="ticket" class="w-4 h-4"></i></a>
+        </div>
+        <div data-aos="fade-left" class="rounded-2xl overflow-hidden shadow-2xl">
+          <img src="assets/hero-stadium.jpg" alt="Stadium arena" loading="lazy" class="w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden">
+      <img src="assets/hero-stadium.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-stadium/85"></div>
+      <div class="container-x relative z-10 py-24 text-center">
+        <span class="eyebrow justify-center inline-flex"><span class="w-8 h-px bg-secondary"></span> Support the
+          Team</span>
+        <h2 class="heading-section mt-4 max-w-3xl mx-auto">Come Cheer for <span class="text-gradient">VictoryClub</span>
+        </h2>
+        <p class="mt-5 text-foreground/80 max-w-xl mx-auto">Bring the noise, wave the flags — the players feed off your
+          energy.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a class='btn-primary' href='contact.html'>Join the Club <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          <a class='btn-outline' href='index.html'><i data-lucide="home" class="w-4 h-4"></i> Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Original upcoming fixtures
+    const FIXTURES = [
+      { date: "SAT 12 SEP", time: "19:00", home: "VictoryClub", away: "Iron FC", venue: "Stadium Arena", tag: "League" },
+      { date: "WED 16 SEP", time: "20:30", home: "Royal United", away: "VictoryClub", venue: "Royal Park", tag: "Cup" },
+      { date: "SUN 20 SEP", time: "17:00", home: "VictoryClub", away: "Phoenix SC", venue: "Stadium Arena", tag: "Friendly" },
+      { date: "SAT 26 SEP", time: "19:00", home: "Northstar", away: "VictoryClub", venue: "Northstar Field", tag: "League" },
+      { date: "WED 30 SEP", time: "20:00", home: "VictoryClub", away: "Coastal FC", venue: "Stadium Arena", tag: "League" },
+    ];
+
+    document.getElementById('fixtures').innerHTML = FIXTURES.map((m, i) => `
+    <div data-aos="fade-left" data-aos-delay="${i * 80}" class="grid md:grid-cols-12 gap-4 items-center p-6 rounded-xl bg-card border border-border hover:border-primary transition-all">
+      <div class="md:col-span-2"><div class="font-display font-bold text-lg">${m.date}</div><div class="text-secondary font-display">${m.time}</div></div>
+      <div class="md:col-span-6 flex items-center gap-4 justify-center">
+        <div class="text-right flex-1 font-display text-xl uppercase">${m.home}</div>
+        <div class="px-4 py-2 rounded-md bg-primary/10 text-primary font-display font-bold">VS</div>
+        <div class="text-left flex-1 font-display text-xl uppercase">${m.away}</div>
+      </div>
+      <div class="md:col-span-3 flex items-center gap-2 text-sm text-muted-foreground"><i data-lucide="map-pin" class="w-4 h-4 text-primary"></i> ${m.venue}</div>
+      <div class="md:col-span-1 md:text-right"><span class="px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-display uppercase font-bold">${m.tag}</span></div>
+    </div>`).join('');
+
+    // Recent results (with scores)
+    const RESULTS = [
+      { date: "SAT 5 SEP", home: "VictoryClub", homeScore: 3, awayScore: 1, away: "Iron FC", venue: "Stadium Arena", tag: "League" },
+      { date: "WED 2 SEP", home: "Royal United", homeScore: 2, awayScore: 2, away: "VictoryClub", venue: "Royal Park", tag: "Cup" },
+      { date: "SUN 30 AUG", home: "VictoryClub", homeScore: 4, awayScore: 0, away: "Phoenix SC", venue: "Stadium Arena", tag: "Friendly" },
+      { date: "SAT 22 AUG", home: "Northstar", homeScore: 1, awayScore: 2, away: "VictoryClub", venue: "Northstar Field", tag: "League" },
+    ];
+
+    document.getElementById('results').innerHTML = RESULTS.map((m, i) => `
+    <div data-aos="fade-left" data-aos-delay="${i * 80}" class="grid md:grid-cols-12 gap-4 items-center p-6 rounded-xl bg-card border border-border hover:border-primary transition-all">
+      <div class="md:col-span-2"><div class="font-display font-bold text-lg">${m.date}</div></div>
+      <div class="md:col-span-6 flex items-center gap-4 justify-center">
+        <div class="text-right flex-1 font-display text-xl uppercase">${m.home}</div>
+        <div class="px-4 py-2 rounded-md bg-primary/10 text-primary font-display font-bold text-lg">${m.homeScore} - ${m.awayScore}</div>
+        <div class="text-left flex-1 font-display text-xl uppercase">${m.away}</div>
+      </div>
+      <div class="md:col-span-3 flex items-center gap-2 text-sm text-muted-foreground"><i data-lucide="map-pin" class="w-4 h-4 text-primary"></i> ${m.venue}</div>
+      <div class="md:col-span-1 md:text-right"><span class="px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-display uppercase font-bold">${m.tag}</span></div>
+    </div>`).join('');
+
+    // League table (simplified, VictoryClub at top)
+    const TABLE = [
+      { pos: 1, team: "VictoryClub", p: 24, w: 18, d: 4, l: 2, pts: 58 },
+      { pos: 2, team: "Iron FC", p: 24, w: 16, d: 5, l: 3, pts: 53 },
+      { pos: 3, team: "Coastal FC", p: 24, w: 14, d: 6, l: 4, pts: 48 },
+      { pos: 4, team: "Royal United", p: 24, w: 13, d: 7, l: 4, pts: 46 },
+      { pos: 5, team: "Northstar", p: 24, w: 11, d: 6, l: 7, pts: 39 },
+    ];
+
+    document.getElementById('standings-body').innerHTML = TABLE.map(row => `
+    <tr class="border-b border-border hover:bg-card/50 transition-colors ${row.team === 'VictoryClub' ? 'bg-primary/5' : ''}">
+      <td class="py-3 px-4 font-display font-bold">${row.pos}</td>
+      <td class="py-3 px-4 font-display uppercase text-sm ${row.team === 'VictoryClub' ? 'text-secondary font-bold' : ''}">${row.team}</td>
+      <td class="py-3 px-4 text-center">${row.p}</td>
+      <td class="py-3 px-4 text-center">${row.w}</td>
+      <td class="py-3 px-4 text-center">${row.d}</td>
+      <td class="py-3 px-4 text-center">${row.l}</td>
+      <td class="py-3 px-4 text-center font-bold ${row.team === 'VictoryClub' ? 'text-secondary' : ''}">${row.pts}</td>
+    </tr>
+  `).join('');
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="css/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60,
+    });
+    lucide.createIcons();
+  </script>
+  <script src="css/partials.js"></script>
+</body>
+
+</html>

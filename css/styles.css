@@ -1,0 +1,120 @@
+/* VictoryClub — custom theme & components (Tailwind via CDN) */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap');
+
+:root{
+  --background: oklch(0.18 0.03 250);
+  --foreground: oklch(0.98 0.005 250);
+  --card: oklch(0.22 0.035 250);
+  --card-foreground: oklch(0.98 0.005 250);
+  --primary: oklch(0.66 0.19 145);
+  --primary-foreground: oklch(0.15 0.02 250);
+  --secondary: oklch(0.86 0.18 95);
+  --secondary-foreground: oklch(0.15 0.02 250);
+  --muted: oklch(0.28 0.03 250);
+  --muted-foreground: oklch(0.72 0.02 250);
+  --border: oklch(0.32 0.03 250);
+  --input: oklch(0.28 0.03 250);
+  --stadium: oklch(0.18 0.03 250);
+  --gradient-hero: linear-gradient(135deg, oklch(0.18 0.03 250 / 0.95) 0%, oklch(0.18 0.03 250 / 0.6) 60%, oklch(0.66 0.19 145 / 0.4) 100%);
+  --gradient-primary: linear-gradient(135deg, oklch(0.66 0.19 145), oklch(0.74 0.18 155));
+  --gradient-victory: linear-gradient(135deg, oklch(0.66 0.19 145), oklch(0.86 0.18 95));
+  --shadow-sports: 0 20px 50px -15px oklch(0.66 0.19 145 / 0.5);
+  --shadow-glow: 0 0 60px oklch(0.86 0.18 95 / 0.4);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--background);color:var(--foreground);font-family:'Inter',sans-serif}
+h1,h2,h3,h4,h5{font-family:'Oswald',sans-serif;letter-spacing:.01em}
+
+.font-display{font-family:'Oswald',sans-serif}
+.bg-background{background-color:var(--background)}
+.bg-card{background-color:var(--card)}
+.bg-card\/40{background-color:color-mix(in oklab, var(--card) 40%, transparent)}
+.bg-card\/60{background-color:color-mix(in oklab, var(--card) 60%, transparent)}
+.bg-card\/70{background-color:color-mix(in oklab, var(--card) 70%, transparent)}
+.bg-card\/80{background-color:color-mix(in oklab, var(--card) 80%, transparent)}
+.bg-primary{background-color:var(--primary)}
+.bg-primary\/10{background-color:color-mix(in oklab, var(--primary) 10%, transparent)}
+.bg-primary\/15{background-color:color-mix(in oklab, var(--primary) 15%, transparent)}
+.bg-primary\/20{background-color:color-mix(in oklab, var(--primary) 20%, transparent)}
+.bg-primary\/30{background-color:color-mix(in oklab, var(--primary) 30%, transparent)}
+.bg-secondary{background-color:var(--secondary)}
+.bg-secondary\/15{background-color:color-mix(in oklab, var(--secondary) 15%, transparent)}
+.bg-muted{background-color:var(--muted)}
+.bg-muted\/60{background-color:color-mix(in oklab, var(--muted) 60%, transparent)}
+.bg-input{background-color:var(--input)}
+.bg-stadium{background-color:var(--stadium)}
+.bg-stadium\/70{background-color:color-mix(in oklab, var(--stadium) 70%, transparent)}
+.bg-stadium\/85{background-color:color-mix(in oklab, var(--stadium) 85%, transparent)}
+.bg-stadium\/90{background-color:color-mix(in oklab, var(--stadium) 90%, transparent)}
+
+.text-foreground{color:var(--foreground)}
+.text-foreground\/60{color:color-mix(in oklab, var(--foreground) 60%, transparent)}
+.text-foreground\/80{color:color-mix(in oklab, var(--foreground) 80%, transparent)}
+.text-foreground\/85{color:color-mix(in oklab, var(--foreground) 85%, transparent)}
+.text-primary{color:var(--primary)}
+.text-primary-foreground{color:var(--primary-foreground)}
+.text-secondary{color:var(--secondary)}
+.text-secondary-foreground{color:var(--secondary-foreground)}
+.text-muted-foreground{color:var(--muted-foreground)}
+.border-border{border-color:var(--border)}
+.border-primary{border-color:var(--primary)}
+.border-primary\/30{border-color:color-mix(in oklab, var(--primary) 30%, transparent)}
+.border-primary\/40{border-color:color-mix(in oklab, var(--primary) 40%, transparent)}
+*{border-color:var(--border)}
+
+.via-stadium\/20{--tw-gradient-via:color-mix(in oklab, var(--stadium) 20%, transparent)}
+.via-stadium\/30{--tw-gradient-via:color-mix(in oklab, var(--stadium) 30%, transparent)}
+.via-stadium\/40{--tw-gradient-via:color-mix(in oklab, var(--stadium) 40%, transparent)}
+.from-stadium{--tw-gradient-from:var(--stadium)}
+.from-stadium\/90{--tw-gradient-from:color-mix(in oklab, var(--stadium) 90%, transparent)}
+
+.container-x{max-width:80rem;margin-inline:auto;padding-inline:1rem}
+@media(min-width:640px){.container-x{padding-inline:1.5rem}}
+@media(min-width:1024px){.container-x{padding-inline:2rem}}
+.section-padding{padding-block:5rem}
+@media(min-width:768px){.section-padding{padding-block:7rem}}
+
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.75rem;border-radius:.375rem;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.875rem;transition:all .3s;background:var(--gradient-primary);color:var(--primary-foreground);box-shadow:var(--shadow-sports)}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.1);box-shadow:var(--shadow-glow)}
+.btn-outline{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.75rem;border-radius:.375rem;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.875rem;border:2px solid var(--secondary);color:var(--secondary);transition:all .3s}
+.btn-outline:hover{background:var(--secondary);color:var(--secondary-foreground);transform:translateY(-2px)}
+
+.glass-navbar{background:oklch(0.18 0.03 250 / .7);backdrop-filter:blur(16px);border-bottom:1px solid oklch(1 0 0 / .08)}
+
+.card-player{position:relative;overflow:hidden;border-radius:.75rem;background:var(--card);border:1px solid var(--border);transition:all .5s}
+.card-player:hover{transform:translateY(-8px);box-shadow:var(--shadow-sports);border-color:var(--primary)}
+.card-player img{transition:transform .7s ease}
+.card-player:hover img{transform:scale(1.08)}
+
+.heading-hero{font-family:'Oswald',sans-serif;font-size:3rem;line-height:.95;font-weight:700;text-transform:uppercase;letter-spacing:-.02em}
+@media(min-width:768px){.heading-hero{font-size:4.5rem}}
+@media(min-width:1024px){.heading-hero{font-size:4rem}}
+.heading-section{font-family:'Oswald',sans-serif;font-size:2.25rem;font-weight:700;text-transform:uppercase;letter-spacing:-.02em}
+@media(min-width:768px){.heading-section{font-size:3rem}}
+.eyebrow{font-family:'Oswald',sans-serif;display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.25em;color:var(--secondary)}
+.text-gradient{background:var(--gradient-victory);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stripe-bg{background-image:repeating-linear-gradient(135deg,oklch(0.66 0.19 145 /.05) 0px,oklch(0.66 0.19 145 /.05) 2px,transparent 2px,transparent 14px)}
+@keyframes fade-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin-ball{to{transform:rotate(360deg)}}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 0 0 oklch(0.66 0.19 145 /.6)}50%{box-shadow:0 0 0 20px oklch(0.66 0.19 145 / 0)}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.animate-fade-up{animation:fade-up .8s ease-out both}
+.animate-spin-ball{animation:spin-ball 1s linear infinite}
+.animate-pulse-glow{animation:pulse-glow 2s ease-out infinite}
+.animate-ticker{animation:ticker 30s linear infinite}
+.footer-explore{margin-left: 11%;}
+
+ /* optional: transition for filter */
+  .gallery-item { transition: opacity 0.3s, transform 0.3s; }
+  .gallery-item.hidden-item { display: none; }
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 380px){
+  .footer-explore{margin-left:0px !important;}
+}
