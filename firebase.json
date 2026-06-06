@@ -5,6 +5,65 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/index",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/about.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      },
+      {
+        "source": "/gallery",
+        "destination": "/gallery.html"
+      },
+      {
+        "source": "/matches",
+        "destination": "/matches.html"
+      },
+      {
+        "source": "/team",
+        "destination": "/team.html"
+      }
+
+    ],
+    "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/index",
+        "type": 301
+      },
+      {
+        "source": "/about.html",
+        "destination": "/about",
+        "type": 301
+      },
+      {
+        "source": "/contact.html",
+        "destination": "/contact",
+        "type": 301
+      },
+      {
+        "source": "/gallery.html",
+        "destination": "/gallery",
+        "type": 301
+      },
+      {
+        "source": "/team.html",
+        "destination": "/team",
+        "type": 301
+      },
+      {
+        "source": "/matches.html",
+        "destination": "/matches",
+        "type": 301
+      }
     ]
   }
 }
