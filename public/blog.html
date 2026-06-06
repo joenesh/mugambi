@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Blog — Mugambi FC</title>
+    <meta name="description"
+        content="Latest news, match reports, player stories, and insights from Mugambi FC.">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/football.png">
+</head>
+
+<body class="bg-background text-foreground">
+    <main class="pt-20">
+        <!-- HERO -->
+        <section class="relative py-24 md:py-32 stripe-bg border-b border-border">
+            <div class="container-x text-center">
+                <span class="eyebrow justify-center inline-flex">
+                    <span class="w-8 h-px bg-secondary"></span> News &amp; Stories
+                </span>
+                <h1 class="heading-hero mt-4">Our <span class="text-gradient">Blog</span></h1>
+                <p class="mt-4 text-muted-foreground max-w-2xl mx-auto text-base leading-relaxed">
+                    Match reports, behind‑the‑scenes content, player interviews, and everything happening inside the Club.
+                </p>
+            </div>
+        </section>
+
+        <!-- BLOG GRID -->
+        <section class="section-padding">
+            <div class="container-x">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="blog-grid">
+                    <!-- Rendered by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="relative overflow-hidden mt-8">
+            <img src="assets/hero-stadium.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-stadium/85"></div>
+            <div class="container-x relative z-10 py-20 text-center">
+                <span class="eyebrow justify-center inline-flex">
+                    <span class="w-8 h-px bg-secondary"></span> Stay Connected
+                </span>
+                <h2 class="heading-section mt-4 max-w-3xl mx-auto">Never Miss a <span class="text-gradient">Story</span></h2>
+                <p class="mt-5 text-foreground/80 max-w-xl mx-auto">Follow us on social media or subscribe to our newsletter for the latest updates.</p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a class='btn-primary' href='/contact'>Join the Club <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    <a class='btn-outline' href='/'><i data-lucide="home" class="w-4 h-4"></i> Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Sample blog posts
+        const posts = [
+            {
+                title: "Mugambi FC Crowned 2026 League Champions",
+                date: "May 5, 2026",
+                excerpt: "An incredible season culminates in a 3‑1 victory under the lights. Read the full match recap and see how the team celebrated.",
+                img: "assets/gallery-1.jpg",
+                category: "Match Report"
+            },
+            {
+                title: "Youth Academy Trials: What You Need to Know",
+                date: "April 28, 2026",
+                excerpt: "Everything parents and young players should know about our upcoming open trials. Dates, registration, and what coaches look for.",
+                img: "assets/gallery-2.jpg",
+                category: "Youth"
+            },
+            {
+                title: "Player Spotlight: Marco Silva's Journey to #9",
+                date: "April 20, 2026",
+                excerpt: "From the academy to the first team — Marco shares his story, his toughest moments, and his dreams for Mugambi FC.",
+                img: "assets/player-1.jpg",
+                category: "Player Story"
+            },
+            {
+                title: "New Training Grounds Officially Open",
+                date: "April 12, 2026",
+                excerpt: "We've upgraded our facilities with two new pitches, a gym, and recovery zones. Take the video tour.",
+                img: "assets/training.jpg",
+                category: "Club News"
+            },
+            {
+                title: "Community Clean‑Up: Over 100 Volunteers Join",
+                date: "April 5, 2026",
+                excerpt: "Mugambi FC gives back. Players, parents, and staff came together to clean local parks and plant trees.",
+                img: "assets/hero-stadium.jpg",
+                category: "Community"
+            },
+            {
+                title: "Diego Cruz Wins Golden Glove Award",
+                date: "March 28, 2026",
+                excerpt: "Our goalkeeper's record‑breaking season earned him the prestigious Golden Glove. Diego reflects on hard work and teamwork.",
+                img: "assets/player-3.jpg",
+                category: "Awards"
+            },
+            {
+                title: "Summer Camp Registration Now Open",
+                date: "March 18, 2026",
+                excerpt: "Ages 6‑17 are welcome. Intensive training, fun drills, and mini‑tournaments. Early‑bird discounts available.",
+                img: "assets/gallery-3.jpg",
+                category: "Events"
+            },
+            {
+                title: "Coach Antonio's Tactical Masterclass",
+                date: "March 10, 2026",
+                excerpt: "A behind‑the‑scenes look at how our head coach prepares for big matches — from video analysis to set‑piece routines.",
+                img: "assets/gallery-4.jpg",
+                category: "Insights"
+            }
+        ];
+
+        const grid = document.getElementById('blog-grid');
+        if (grid) {
+            grid.innerHTML = posts.map((post, i) => `
+                <article data-aos="fade-up" data-aos-delay="${i * 80}" class="group rounded-2xl bg-card border border-border overflow-hidden flex flex-col transition-all hover:border-primary hover:shadow-xl">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="${post.img}" alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-5 md:p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-3 text-xs font-display uppercase tracking-widest text-secondary mb-3">
+                            <span>${post.category}</span>
+                            <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                            <span class="text-muted-foreground">${post.date}</span>
+                        </div>
+                        <h2 class="font-display text-xl uppercase leading-tight group-hover:text-primary transition-colors mb-3 flex-1">${post.title}</h2>
+                        <p class="text-sm text-muted-foreground leading-relaxed mb-5">${post.excerpt}</p>
+                        <a href="blog-detail.html" class="mt-auto inline-flex items-center gap-2 text-sm font-display uppercase tracking-wider text-secondary hover:gap-3 transition-all">
+                            Read More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest">
+    </script>
+    <script src="css/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 60,
+        });
+        lucide.createIcons();
+    </script>
+    <script src="css/partials.js">
+    </script>
+</body>
+
+</html>

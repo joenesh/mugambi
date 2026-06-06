@@ -16,6 +16,10 @@
         "destination": "/about.html"
       },
       {
+        "source": "/blog",
+        "destination": "/blog.html"
+      },
+      {
         "source": "/contact",
         "destination": "/contact.html"
       },
@@ -42,6 +46,11 @@
       {
         "source": "/about.html",
         "destination": "/about",
+        "type": 301
+      },
+      {
+        "source": "/blog.html",
+        "destination": "/blog",
         "type": 301
       },
       {

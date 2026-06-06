@@ -138,7 +138,7 @@
               <div class="text-secondary font-display font-bold">VS</div>
               <div class="text-center flex-1">
                 <div class="w-10 h-10 mx-auto rounded-full bg-muted flex items-center justify-center"><i data-lucide="trophy" class="w-5 h-5 text-foreground/60"></i></div>
-                <div class="font-display text-sm uppercase mt-2">Iron FC</div>
+                <div class="font-display text-sm uppercase mt-2">Mwenda FC</div>
               </div>
             </div>
             <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs">
@@ -152,13 +152,13 @@
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-4 h-4"></i></span><span class="pt-1">12 Stadium Road, Greenfield City</span></li>
             <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-4 h-4"></i></span><a href="tel:+15550101234" class="pt-1">+1 (555) 010-1234</a></li>
-            <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-4 h-4"></i></span><a href="mailto:hello@victoryclub.fc" class="pt-1">hello@victoryclub.fc</a></li>
+            <li class="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"><span class="w-8 h-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-4 h-4"></i></span><a href="mailto:hello@mugambi.fc" class="pt-1">hello@mugambi.fc</a></li>
           </ul>
         </div>
       </div>
       <div class="border-t border-border">
         <div class="container-x py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-muted-foreground uppercase tracking-wider font-display">
-          <p>© ${year} VictoryClub FC · All rights reserved</p>
+          <p>© ${year} Mugambi FC · All rights reserved</p>
           <p class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>Play Hard · Win Together</p>
           <div class="flex gap-4"><a href="privacy.html" class="hover:text-secondary">Privacy</a><a href="terms.html" class="hover:text-secondary">Terms</a><a href="faq.html" class="hover:text-secondary">FAQs</a></div>
         </div>
